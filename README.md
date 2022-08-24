@@ -373,6 +373,14 @@
     * It is a programming interface that allows us to create, change, or remove        elements from a website document. 
     * DOM manipulation is when you use JavaScript to add, remove, and modify elements of a website. 
 
+
+    Why was virtual DOM introduced? 
+    *DOM manipulation is an integral part of any web application, but DOM manipulation is quite slow when compared to other operations in    JavaScript. The efficiency of the application gets affected when several DOM manipulations are being done. Most JavaScript frameworks         update the entire DOM even when a small part of the DOM changes.
+    *For example, consider a list that is being rendered inside the DOM. If one of the items in the list changes, the entire list gets rendered      again instead of just rendering the item that was changed/updated. This is called inefficient updating.
+
+    To address the problem of inefficient updating, the react team introduced the concept of virtual DOM.
+
+
     ## What is Server-Side Rendering?
     Server-side rendering (SSR) is an application’s ability to convert HTML files on the server into a fully rendered HTML page for the client.     The web browser submits a request for information from the server, which instantly responds by sending a fully rendered page to the client
     
@@ -382,10 +390,35 @@
     * Rendering server-side helps efficiently load webpages for users with slow internet connection or outdated devices.
 
 
+    ###What is useState() ?
+    
+    *The useState() is a built-in React Hook that allows us to track state in a function component.
+    *State generally refers to data or properties that need to be tracking in an application.
+    *useState accepts an initial state and returns two values: The current state. A function that updates the state.
    **[⬆ Back to Top](#table-of-contents)**
     
 3. ### What is JSX?
 
+
+    * JSX stands for JavaScript XML. It allows us to write HTML inside JavaScript and place them in the DOM without using functions like appendChild( ) or createElement( ).
+    * As stated in the official docs of React, JSX provides syntactic sugar for React.createElement( ) function.
+    * **NOTE** We can create react applications without using JSX as well. Without using JSX, we would have to create an element BY React.createElement and then render by ReactDOM.render.
+     ```
+            const text = React.createElement('p', {}, 'This is a text');
+            const container = React.createElement('div','{}',text );
+            ReactDOM.render(container,rootElement);
+     ```
+     
+     
+    * Using JSX, the above code can be simplified:
+      ```
+      const container = (
+        <div>
+          <p>This is a text</p>
+        </div>
+        );
+        ReactDOM.render(container,rootElement);
+      ```
     *JSX* is a XML-like syntax extension to ECMAScript (the acronym stands for *JavaScript XML*). Basically it just provides syntactic sugar for the `React.createElement()` function, giving us expressiveness of JavaScript along with HTML like template syntax.
 
     In the example below text inside `<h1>` tag is returned as JavaScript function to the render function.
