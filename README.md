@@ -382,6 +382,13 @@ You can download the PDF and Epub version of this repository from the latest run
     * Supports **server-side rendering**.
     * Follows **Unidirectional** data flow or data binding.
     * Uses **reusable/composable** UI components to develop the view.
+    
+    ##Extras
+    
+    DOM & DOM Manipulation=> 
+    * The **Document Object Model (DOM)** is an **application programming interface (API)** for HTML and XML documents. 
+    * In website development, DOM stands for Document Object Model. It is a programming interface that allows us to create, change, or remove        elements from a website document. 
+    * DOM manipulation is when you use JavaScript to add, remove, and modify elements of a website. 
 
 
    **[⬆ Back to Top](#table-of-contents)**
