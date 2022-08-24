@@ -366,12 +366,20 @@
     * Follows **Unidirectional** data flow or data binding.
     * Uses **reusable/composable** UI components to develop the view.
     
-    ##Extras
+    ###Extras
     
     DOM & DOM Manipulation=> 
     * The **Document Object Model (DOM)** is an **application programming interface (API)** for HTML and XML documents. 
-    * In website development, DOM stands for Document Object Model. It is a programming interface that allows us to create, change, or remove        elements from a website document. 
+    * It is a programming interface that allows us to create, change, or remove        elements from a website document. 
     * DOM manipulation is when you use JavaScript to add, remove, and modify elements of a website. 
+
+    ## What is Server-Side Rendering?
+    Server-side rendering (SSR) is an application’s ability to convert HTML files on the server into a fully rendered HTML page for the client.     The web browser submits a request for information from the server, which instantly responds by sending a fully rendered page to the client
+    
+    ## What are the Benefits of Server-Side Rendering?
+    * A server-side rendered application enables pages to load faster, improving the user experience.
+    * When rendering server-side, search engines can easily index and crawl content because the content can be rendered before the page is loaded, which is ideal for SEO.
+    * Rendering server-side helps efficiently load webpages for users with slow internet connection or outdated devices.
 
 
    **[⬆ Back to Top](#table-of-contents)**
@@ -471,6 +479,10 @@
           }
         }
         ```
+        
+        ###EXTRAS
+        What is pure JavaScript functions ?
+        A Pure Function is a function (a block of code) that always returns the same result if the same arguments are passed.
 
 
    **[⬆ Back to Top](#table-of-contents)**
